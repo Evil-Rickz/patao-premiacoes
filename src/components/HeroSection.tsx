@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Gift, Heart, Trophy, DollarSign } from "lucide-react";
-
 export function HeroSection() {
-  return (
-    <section className="gradient-hero py-16 md:py-24 relative overflow-hidden">
+  return <section className="gradient-hero py-16 md:py-24 relative overflow-hidden">
       {/* Floating money bills decoration */}
       <div className="absolute inset-0 pointer-events-none">
         <DollarSign className="absolute top-10 left-10 h-8 w-8 text-accent/30 floating-money" />
@@ -55,16 +53,11 @@ export function HeroSection() {
 
           {/* Image/Mascot */}
           <div className="flex justify-center">
-            <Card className="p-8 shadow-primary bg-gradient-to-br from-card to-secondary/20">
-              <img 
-                src="/lovable-uploads/fe96815c-a1f8-46ac-b24c-43cbe615b524.png" 
-                alt="Patão Premiações Mascot" 
-                className="w-full max-w-md mx-auto animate-bounce-gentle"
-              />
+            <Card className="p-8 shadow-primary bg-gradient-to-br from-card to-secondary/20 rounded-full bg-orange-600">
+              <img src="/lovable-uploads/fe96815c-a1f8-46ac-b24c-43cbe615b524.png" alt="Patão Premiações Mascot" className="w-full max-w-md mx-auto animate-bounce-gentle" />
             </Card>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
