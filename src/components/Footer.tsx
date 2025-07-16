@@ -1,10 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Award, Smartphone, Instagram, Facebook, Youtube } from "lucide-react";
-
 export function Footer() {
-  return (
-    <footer className="bg-card border-t">
+  return <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-12">
         {/* App Download Section */}
         <div className="mb-12">
@@ -36,11 +34,7 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
-            <img 
-              src="/lovable-uploads/fe96815c-a1f8-46ac-b24c-43cbe615b524.png" 
-              alt="Patão Premiações" 
-              className="h-16 w-auto mb-4"
-            />
+            <img src="/lovable-uploads/fe96815c-a1f8-46ac-b24c-43cbe615b524.png" alt="Patão Premiações" className="h-16 w-auto mb-4" />
             <p className="text-muted-foreground mb-4 leading-relaxed">
               O Patão Premiações é a plataforma de sorteios solidários que une diversão, prêmios incríveis 
               e impacto social. Cada título adquirido contribui para transformar vidas em todo o Brasil.
@@ -79,8 +73,8 @@ export function Footer() {
               <li><a href="#" className="hover:text-primary transition-colors">Regulamento</a></li>
               <li>
                 <div className="text-sm">
-                  <div>WhatsApp: (11) 99999-9999</div>
-                  <div>Email: contato@pataoremiacoes.com.br</div>
+                  <div>WhatsApp: (98) 98135-0326</div>
+                  <div>Email: contato@pataopremiacoes.com.br</div>
                 </div>
               </li>
             </ul>
@@ -104,9 +98,7 @@ export function Footer() {
             </div>
             
             <div className="text-center text-muted-foreground">
-              <p className="mb-2">
-                © 2024 Patão Premiações. Todos os direitos reservados.
-              </p>
+              <p className="mb-2">© 2025 Patão Premiações. Todos os direitos reservados.</p>
               <p className="text-xs flex items-center justify-center">
                 Desenvolvido com <Heart className="h-3 w-3 mx-1 text-red-500" /> pela equipe Patão
               </p>
@@ -126,6 +118,5 @@ export function Footer() {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
