@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Gift, Heart, Trophy, DollarSign } from "lucide-react";
+import pataoMascote from "@/assets/patao-mascote.png";
 export function HeroSection() {
   return <section className="gradient-hero py-16 md:py-24 relative overflow-hidden">
       {/* Floating money bills decoration */}
@@ -53,8 +54,8 @@ export function HeroSection() {
 
           {/* Image/Mascot */}
           <div className="flex justify-center">
-            <Card className="p-8 shadow-primary bg-gradient-to-br from-card to-secondary/20 rounded-full bg-orange-600">
-              <img src="/lovable-uploads/fe96815c-a1f8-46ac-b24c-43cbe615b524.png" alt="Patão Premiações Mascot" className="w-full max-w-md mx-auto animate-bounce-gentle" />
+            <Card className="p-8 shadow-primary bg-gradient-to-br from-card to-secondary/20 rounded-full">
+              <img src={pataoMascote} alt="Patão Mascot - Concorra a prêmios incríveis" className="w-full max-w-md mx-auto animate-bounce-gentle" />
             </Card>
           </div>
         </div>
