@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Trophy, User, ShoppingCart } from "lucide-react";
 import { cn } from "@/lib/utils";
+import pataoLogo from "@/assets/patao-logo.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/fe96815c-a1f8-46ac-b24c-43cbe615b524.png" 
+              src={pataoLogo} 
               alt="Patão Premiações" 
               className="h-12 w-auto"
             />

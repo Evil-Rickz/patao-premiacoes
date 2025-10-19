@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Award, Smartphone, Instagram, Facebook, Youtube } from "lucide-react";
+import pataoLogo from "@/assets/patao-logo.png";
 export function Footer() {
   return <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-12">
@@ -34,7 +35,7 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
-            <img src="/lovable-uploads/fe96815c-a1f8-46ac-b24c-43cbe615b524.png" alt="Patão Premiações" className="h-16 w-auto mb-4" />
+            <img src={pataoLogo} alt="Patão Premiações" className="h-16 w-auto mb-4" />
             <p className="text-muted-foreground mb-4 leading-relaxed">
               O Patão Premiações é a plataforma de sorteios solidários que une diversão, prêmios incríveis 
               e impacto social. Cada título adquirido contribui para transformar vidas em todo o Brasil.
